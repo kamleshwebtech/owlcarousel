@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl.theme.default.css">
+    
+
+    <script src="jquery.min.js"></script>
+    <script src="owl.carousel.js"></script>
+
+    <style>	
+    .owl-carousel .item{
+    	background-color: #ff3f4d;
+    }
+    .item h2{
+      color: #ffffff;
+      text-align: center;
+    }
+    .owl-dots{
+      display: none;
+    }
+    </style>
+  </head>
+   <body>
+
+      <div class="row" style="background-color:#1ccacd;">
+        <div class="large-12 columns">
+          <div class="owl-carousel">
+            <div class="item">
+              <h2>Swipe</h2>
+            </div>
+            <div class="item">
+              <h2>Drag</h2>
+            </div>
+            <div class="item">
+              <h2>Responsive</h2>
+            </div>
+            <div class="item">
+              <h2>CSS3</h2>
+            </div>
+            <div class="item">
+              <h2>Fast</h2>
+            </div>
+            <div class="item">
+              <h2>Easy</h2>
+            </div>
+            <div class="item">
+              <h2>Free</h2>
+            </div>
+            <div class="item">
+              <h2>Upgradable</h2>
+            </div>
+            <div class="item">
+              <h2>Tons of options</h2>
+            </div>
+            <div class="item">
+              <h2>Infinity</h2>
+            </div>
+            <div class="item">
+              <h2>Auto Width</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script>
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+      	items:6,
+        margin: 10,
+        loop: true,
+        autoplay : true,
+    		slideTransition: 'linear',
+    		autoplayTimeout : 4000,
+    		autoplayHoverPause : true,
+    		autoplaySpeed : 4000,
+    		pagination:false,
+    		navigation:false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 4
+          }
+        }
+      })
+    </script>
+
+
+   </body>
+</html>  
